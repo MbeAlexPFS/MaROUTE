@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaROUTE - Contact -</title>
+    <link rel="stylesheet" href="../asset/site.css">
+</head>
+<body class="font">
+    <nav class="flex bottom-shadow between fixed w-100 v-center p-0 no-toggled bg-black" id="header">
+        <h3 class="font flex v-center hold gap between p-w">
+            <div class="flex v-center hold">Ma<span class="text-green">ROUTE</span></div>
+            <div class="menu-actions">
+                <button class="p-0" id="no-toggled">
+                    <img class="ico" src="../ressource/image/menu-100.png">
+                </button>
+                <button class="p-0" id="toggled">
+                    <img src="../ressource/image/cross-100.png" class="ico">
+                </button>
+            </div>
+        </h3>
+        <div class="flex gap p-w font v-center links">
+            <a href="/">Accueil</a>
+            <a href="about.html">A&nbsp;propos</a>
+            <a href="tarif.html">Tarif</a>
+            <a href="contact.html" class="active">Contact</a>
+            <div class="flex gap v-center hold">
+                <a href="login.html" class="btn">Se&nbsp;connecter</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="p-top flex v-center column">
+        <div class="bg-home flex column center p w-100 h-2">
+            <div class="z-100 m-w">
+                <h1 class="title"> NOUS <span class="text-green">CONTACTER</span></h1> 
+            </div>
+        </div>
+        <div class="p-style w-100 text-white text-center">
+            Promotion: réduction de 50% sur les tarifs !
+        </div>
+        <div class="flex around m-top v-center">
+            <h2 class="m-w ">
+                <div class="w-100 flex column">
+                    <h1 class="fs-2 m0">
+                        Nous sommes à votre écoute
+                    </h1>
+                    <p> Nous vous promettons une réponse rapide et concise.</p>
+                </div>
+                <div class="flex column v-center gap bg-grey p">
+                    <div>
+                        <div class="flex gap m">
+                            <div class="flex column">
+                                <label for="nom">Nom</label>
+                                <input class="input" id="nom" type="text" required>
+                            </div>
+                            <div class="flex column">
+                                <label for="email">Email</label>
+                                <input class="input" id="email" type="text" required>
+                            </div>
+                        </div>
+                        <div class="flex column m">
+                            <label for="com">Commentaire</label>
+                            <textarea class="input" id="com" required></textarea>
+                        </div>
+                        <div class="flex column m">
+                            <label for="score" class="flex v-center hold" id="score_debug">Score</label>
+                            <select id="score" class="input" required>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex gap end m">
+                            <button class="btn btn-black" id="comment">Envoyer</button>
+                            <button class="btn btn-black" id="comment">Annuler</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </h2>
+            <img src="../ressource/image/5606.jpg" alt="presentation" class="img-2">
+        </div>
+    </div>
+    
+    <div class="flex column v-center bg-grey p m-top">
+        <div class="flex between">
+            <div class="flex column p-w b-right">
+                <h2>Des questions ?</h2>
+                <p>Veuillez nous contactez ici</p>
+                <div class="flex gap v-center hold a-black">
+                    <a href="contact.html" class="btn btn-black">Contact</a>
+                </div>
+            </div>
+            <div class="flex column p-w">
+                <h2>Suivez nous sur ces plateformes</h2>
+                <div class="flex gap hold">
+                    <img src="../ressource/image/google-100.png" alt="google" class="ico">
+                    <img src="../ressource/image/facebook-100.png" alt="facebook" class="ico">
+                    <img src="../ressource/image/instagram-100.png" alt="instagram-" class="ico">
+                    <img src="../ressource/image/news-90.png" alt="newsletter" class="ico">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="flex column v-center bg-black p">
+        <div> CopyRight Ma<span class="text-green">ROUTE</span>.com 2025-2026 </div>
+    </footer>
+    <script src="../asset/site.js"></script>
+</body>
+</html>

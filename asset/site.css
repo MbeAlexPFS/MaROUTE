@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.p {
+    padding: 5px;
+}
+
+.m {
+    margin: 20px;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.p {
+    padding: 20px;
+}
+
+.p-w {
+    padding: 0 20px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-white, .a-white a{
+    color: white;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.bottom-shadow {
+    box-shadow: 0 1px 10px black;
+}
+
+.font {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    color: transparent;
+    font-size: 10vw;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: lawngreen;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bg-black a {
+    color: white;
+}
+
+.bg-black .active {
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+button, .btn {
+    transition: 0.5s;
+    border: solid 2px deepskyblue;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+button:hover, .btn:hover {
+    transition: 0.5s;
+    background-color: deepskyblue;
+}
+
+
+
+.btn-red {
+    border: solid 2px orangered;
+}
+
+.btn-black {
+    border: solid 2px black;
+    color: black;
+}
+
+.fs-2 {
+    font-size: 10vh;
+}
+
+.btn-red:hover {
+    transition: 0.5s;
+    background-color: orangered;
+}
+
+.btn-black:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.btn:disabled {
+    background-color: lightgray;
+}
+
+.btn:disabled:hover {
+    transition: 0.5s;
+    border-color: red;
+    color: red;    
+}
+
+.p-0 {
+    padding: 10px;
+}
+
+.ico {
+    transition: 0.5s;
+    width: 30px;
+    height: 30px;
+}
+
+.ico:hover {
+    transition: 0.5s;
+    scale: 1.2;
+}
+
+.menu-actions {
+    display: none;
+}
+
+.toggled #no-toggled {
+    display: none;
+}
+
+.no-toggled #toggled {
+    display: none;
+}
+
+.w-100-2 {
+    width: 90%;
+}
+
+.p-h {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+
+.bg-black {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    z-index: 200;
+}
+
+.p-top {
+    padding-top: 80px;
+}
+
+.m-top {
+    margin-top: 100px;
+}
+
+.logo-2 {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.bg-home {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    animation: infinite bg-animation 20s ease-in;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-image: url("../ressource/image/4.jpg");
+    }
+    25% {
+        background-image: url("../ressource/image/1297.jpg");    
+    }
+    50% {
+        background-image: url("../ressource/image/aircraft.jpg"); 
+    }
+    75% {
+        background-image: url("../ressource/image/container.jpg"); 
+    }
+    100%{
+        background-image: url("../ressource/image/4.jpg");    
+    }
+}
+
+.bg-ablue {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.341);
+    width: 100vw;
+    height: 490.5px;
+    top: 95.5px;
+}
+
+.bg-lblue {
+    background-color: lightskyblue;
+}
+
+.bg-lgrey {
+    background-color:gainsboro;
+}
+
+.b-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.z-100 {
+    z-index: 100;
+}
+
+.p-style {
+    background-color: dodgerblue;
+    padding: 20px;
+}
+
+.b-bottom {
+    border-bottom: 5px solid blue;
+    width: fit-content;
+}
+
+.m-w {
+    margin: 0 50px;
+}
+
+.p-w {
+    padding: 0 100px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.bg-grey {
+    background-color: gray;
+    color: white;
+}
+
+.w {
+    width: 200px;
+}
+
+.w-2 {
+    width: 400px;
+}
+
+.text-lblue {
+    color: lightskyblue;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: dodgerblue;
+}
+
+.text-green {
+    color: lawngreen;
+}
+
+.raduis {
+    border-radius: 20px;
+}
+
+.bg-blue {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.h {
+    height: 400px;
+}
+
+.h-2 {
+    height: 550px;
+}
+
+.sized {
+    width: 300px;
+}
+
+.bg-lblue {
+    background-color: lightblue;
+}
+
+input, textarea, select {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo-3 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.overflow-x {
+    width: 80%;
+    overflow-x: auto;
+    justify-content: start;
+}
+
+.overflow-y {
+    width: 90%;
+    height: 600px;
+    overflow-y: auto;
+    align-items: start;
+}
+
+.hover {
+    transition: 0.5s;
+    scale: 1;
+}
+
+.hover:hover {
+    transition: 0.5s;
+    scale: 1.1;
+    box-shadow: 0 0 25px grey;
+}
+
+.b-right {
+    border-right: 5px solid dimgray;
+}
+
+.text-dgrey {
+    color:dimgray;
+}
+
+.bg-orange {
+    background-color: darkorange;
+    color: white;
+}
+
+body {
+    background-image: url("../ressource/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    transition: 0.5s;
+    overflow: hidden;
+    width: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+.selected {
+    transition: 0.5s;
+    width: 500px;
+}
+
+.backdrop {
+    backdrop-filter: blur(10px);
+}
+
+.b-lgrey {
+    border: 2px solid lightgrey;
+}
+
+@media screen and (max-width: 720px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .menu-actions {
+        display: initial;
+    }
+
+    .b-right {
+        border-right: none;
+        border-bottom: solid 2px dimgray;
+        padding-bottom: 10px;
+    }
+
+    .hold {
+        flex-direction: row;
+    }
+
+    .no-toggled .links {
+        transition: 1s;
+        overflow-y: hidden;
+        height: 0px;
+    }
+
+    .toggled .links {
+        transition: 1s;
+        overflow-y: hidden;
+        height: 220px;
+    }
+
+    .no-toggled {
+        gap: 0;
+    }
+
+    .img-2 {
+        width: 100%;
+    }
+}
+
