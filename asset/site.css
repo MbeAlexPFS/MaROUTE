@@ -1,5 +1,21 @@
+:root {
+    --black : black;
+    --white : white;
+    --red : orangered;
+    --green : lawngreen;
+    --blue : deepskyblue;
+    --blue2 : dodgerblue;
+    --lblue : lightskyblue;
+    --lgrey : gainsboro;
+    --gray : gray;
+    --gray2 : gray;
+    --orange : darkorange;
+}
+
 body {
     margin: 0;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 h3 {
@@ -10,12 +26,34 @@ h3 {
     width: 100%;
 }
 
+.w-a-100 {
+    width: 100vw;
+}
+
+.h-a-90 {
+    height: 90vh;
+}
+
 .flex {
     display: flex;
 }
 
+.bs-bb {
+    box-sizing: border-box;
+}
+
+.flex-100 {
+    flex: 0 0 100vw;
+}
+
 .fixed {
     position: fixed;
+}
+
+.carousel-img {
+    position: relative;
+    right: 0%;
+    transition: 1s;
 }
 
 .p {
@@ -83,7 +121,7 @@ h3 {
 }
 
 .text-white, .a-white a{
-    color: white;
+    color: var(--white);
 }
 
 .logo {
@@ -92,7 +130,7 @@ h3 {
 }
 
 .bottom-shadow {
-    box-shadow: 0 1px 10px black;
+    box-shadow: 0 1px 10px var(--black);
 }
 
 .font {
@@ -105,73 +143,110 @@ h3 {
     color: transparent;
     font-size: 10vw;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: lawngreen;
+    -webkit-text-stroke-color: var(--green);
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 .bg-black a {
-    color: white;
+    color: var(--white);
 }
 
 .bg-black .active {
     border: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid var(--white);
+}
+
+.bg-white a {
+    color: var(--black);
+}
+
+.bg-white .active {
+    border: none;
+    border-bottom: 2px solid var(--black);
 }
 
 button, .btn {
     transition: 0.5s;
-    border: solid 2px deepskyblue;
+    border: solid 2px var(--blue);
     background-color: transparent;
     padding: 20px;
     border-radius: 5px;
-    color: deepskyblue;
+    color: var(--white);
     font-weight: bold;
 }
 
 button:hover, .btn:hover {
     transition: 0.5s;
-    background-color: deepskyblue;
+    background-color: var(--blue);
 }
 
 
 
 .btn-red {
-    border: solid 2px orangered;
+    border: solid 2px var(--red);
 }
 
+.btn-green {
+    border: solid 2px var(--green);
+    color: var(--green);
+}
+
+
 .btn-black {
-    border: solid 2px black;
-    color: black;
+    border: solid 2px var(--black);
+    color: var(--black);
 }
 
 .fs-2 {
     font-size: 10vh;
 }
 
+.fs-bold {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.right {
+    left: 80%;
+}
+
+.bottom-center {
+    top: 50%;   
+}
+
+.bottom {
+    top: 80%;
+}
+
 .btn-red:hover {
     transition: 0.5s;
-    background-color: orangered;
+    background-color: var(--red);
+}
+.btn-green:hover {
+    transition: 0.5s;
+    background-color: var(--green);
+    color: var(--white);
 }
 
 .btn-black:hover {
     transition: 0.5s;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .btn:disabled {
-    background-color: lightgray;
+    background-color: var(--gray);
 }
 
 .btn:disabled:hover {
     transition: 0.5s;
-    border-color: red;
-    color: red;    
+    border-color: var(--red);
+    color: var(--red);    
 }
 
 .p-0 {
@@ -201,8 +276,43 @@ button:hover, .btn:hover {
     display: none;
 }
 
+.sticky {
+    position: fixed;
+    animation: reveal 1s;
+    top: 0;
+    transition: 2s;
+}
+
+.loop-h {
+    position: relative;
+    animation: loopH 30s infinite;
+}
+
+@keyframes loopH {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+
 .w-100-2 {
     width: 90%;
+}
+
+.raduis-100 {
+    border-radius: 100%;
 }
 
 .p-h {
@@ -211,14 +321,14 @@ button:hover, .btn:hover {
 }
 
 .bg-white {
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 
 .bg-black {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 nav {
@@ -236,51 +346,16 @@ nav {
 .logo-2 {
     width: 300px;
     height: 300px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 100%;
 }
 
-.bg-home {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    animation: infinite bg-animation 20s ease-in;
-}
-
-@keyframes bg-animation {
-    0% {
-        background-image: url("../ressource/image/4.jpg");
-    }
-    25% {
-        background-image: url("../ressource/image/1297.jpg");    
-    }
-    50% {
-        background-image: url("../ressource/image/aircraft.jpg"); 
-    }
-    75% {
-        background-image: url("../ressource/image/container.jpg"); 
-    }
-    100%{
-        background-image: url("../ressource/image/4.jpg");    
-    }
-}
-
-.bg-ablue {
-    position: absolute;
-    background-color: rgba(0, 0, 255, 0.341);
-    width: 100vw;
-    height: 490.5px;
-    top: 95.5px;
-}
-
 .bg-lblue {
-    background-color: lightskyblue;
+    background-color: var(--blue2);
 }
 
 .bg-lgrey {
-    background-color:gainsboro;
+    background-color:var(--gray2);
 }
 
 .b-top {
@@ -293,13 +368,12 @@ nav {
 }
 
 .p-style {
-    background-color: dodgerblue;
+    background-color: var(--blue2);
     padding: 20px;
 }
 
-.b-bottom {
-    border-bottom: 5px solid blue;
-    width: fit-content;
+input,  textarea, select {
+    color: var(--black);
 }
 
 .m-w {
@@ -322,8 +396,8 @@ nav {
 }
 
 .bg-grey {
-    background-color: gray;
-    color: white;
+    background-color: var(--gray);
+    color: var(--white);
 }
 
 .w {
@@ -335,19 +409,19 @@ nav {
 }
 
 .text-lblue {
-    color: lightskyblue;
+    color: var(--blue2);
 }
 
 .text-black {
-    color: black;
+    color: var(--black);
 }
 
 .text-blue {
-    color: dodgerblue;
+    color: var(--blue2);
 }
 
 .text-green {
-    color: lawngreen;
+    color: var(--green);
 }
 
 .raduis {
@@ -355,7 +429,7 @@ nav {
 }
 
 .bg-blue {
-    background-color: deepskyblue;
+    background-color: var(--blue2);
     color: white;
 }
 
@@ -372,11 +446,11 @@ nav {
 }
 
 .bg-lblue {
-    background-color: lightblue;
+    background-color: var(--lblue);
 }
 
 input, textarea, select {
-    background-color: white;
+    background-color: var(--white);
     border: none;
     padding: 10px;
     border-radius: 10px;
@@ -385,13 +459,14 @@ input, textarea, select {
 .logo-3 {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 100%;
 }
 
+
 .overflow-x {
-    width: 80%;
-    overflow-x: auto;
+    width: 100%;
+    overflow-x: hidden;
     justify-content: start;
 }
 
@@ -410,11 +485,11 @@ input, textarea, select {
 .hover:hover {
     transition: 0.5s;
     scale: 1.1;
-    box-shadow: 0 0 25px grey;
+    box-shadow: 0 0 25px var(--gray);
 }
 
 .b-right {
-    border-right: 5px solid dimgray;
+    border-right: 5px solid var(--gray2);
 }
 
 .text-dgrey {
@@ -422,14 +497,8 @@ input, textarea, select {
 }
 
 .bg-orange {
-    background-color: darkorange;
-    color: white;
-}
-
-body {
-    background-image: url("../ressource/bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 .hidden {
@@ -454,7 +523,7 @@ body {
 }
 
 .b-lgrey {
-    border: 2px solid lightgrey;
+    border: 2px solid var(--lgrey);
 }
 
 @media screen and (max-width: 720px) {
@@ -468,7 +537,7 @@ body {
 
     .b-right {
         border-right: none;
-        border-bottom: solid 2px dimgray;
+        border-bottom: solid 2px var(--gray);
         padding-bottom: 10px;
     }
 
@@ -496,4 +565,62 @@ body {
         width: 100%;
     }
 }
+
+.toleft,.toright,.toup {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.left {
+    animation: to-left 2s;
+    opacity: 1;
+}
+
+.right {
+    animation: to-right 2s;
+    opacity: 1;
+}
+
+.up {
+    animation: to-up 2s;
+    opacity: 1;
+}
+
+@keyframes to-left {
+    0% {
+        left: 100vw;
+        opacity: 0;
+    }
+    100% {
+        left: 0vw;
+        opacity: 1;
+    }
+}
+
+@keyframes to-right {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    100% {
+        left: 0vw;
+        opacity: 1;
+    }
+}
+
+@keyframes to-up {
+    0% {
+        top: 50vh;
+        opacity: 0;
+    }
+    100% {
+        top: 0vh;
+        opacity: 1;
+    }
+}
+
+
 

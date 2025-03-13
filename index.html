@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaROUTE - Accueil -</title>
     <link rel="stylesheet" href="asset/site.css">
+    <link rel="stylesheet" href="asset/app.css">
 </head>
 <body class="font">
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-0 no-toggled bg-black" id="header">
+    <nav class="flex between fixed w-100 v-center p-0 no-toggled" id="header">
         <h3 class="font flex v-center hold gap between p-w">
             <div class="flex v-center hold">Ma<span class="text-green">ROUTE</span></div>
             <div class="menu-actions bg-blue">
@@ -29,21 +30,69 @@
             </div>
         </div>
     </nav>
-    
-    <div class="p-top p flex v-center column">
-        <div class="bg-home flex column center p w-100 h-2">
-            <div class="z-100 m-w">
-                <h1 class="title">Ma<span class="text-green">ROUTE</span></h1>
-                <h1>Un transport pas comme les autres</h1>
-                <div class="flex gap v-center hold a-white">
-                    <a href="page/about.html" class="btn btn-red">En savoir plus</a>
-                </div>   
+    <!-- en tête -->
+    <header>
+        <div class="flex v-center overflow-x hold text-white">
+            <section class="w-100 h-a-90 flex v-center carousel-img center flex-100 bg-1">
+                <div>
+                    <h1 class="title">Ma<span class="text-green">ROUTE</span></h1>
+                    <h1>Un transport pas comme les autres</h1>
+                    <div class="flex gap v-center hold a-white">
+                        <a href="page/about.html" class="btn btn-red">En savoir plus</a>
+                    </div>  
+                </div>
+            </section>
+            <section class="w-100 h-a-90 flex v-center carousel-img center  flex-100 bg-2">
+                <div>
+                    <h1>Une <span>accessiblité</span> imprésionnante</h1>
+                    <h2>Cette application a été pensée pour offrir la meilleur experiénces utilisateurs</h2>
+                    <p>Que vous soyez débutant ou non.</p>
+                </div>
+            </section>
+            <section class="w-100 h-a-90 flex v-center carousel-img center  flex-100 bg-3">
+                <div>
+                    <h1>Ce projet vous <span>intéresse</span></h1>
+                    <h2>Vous avez la possibilité d'en connaitre plus sur le créateur Et de modifier son projet à votre guise.</h2>
+                    <p>C'est Open Source.</p>
+                </div>
+            </section>
+            <section class="w-100 h-a-90 flex v-center carousel-img center flex-100 bg-4">
+                <div>
+                    <h1>Lorem</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo vitae tenetur aliquam mollitia, quis quam facere enim suscipit ipsa dolore. Ipsa est voluptatum eaque veritatis alias optio deleniti quam molestias.</p>
+                </div>
+            </section>
+        </div>
+        <div class="c-btn flex center gap p hold bg-black">
+            <button class="raduis-100 carousel-btn" value=0 ></button>
+            <button class="raduis-100 carousel-btn" value=1 ></button>
+            <button class="raduis-100 carousel-btn" value=2 ></button>
+            <button class="raduis-100 carousel-btn" value=3 ></button>
+        </div>
+    </header>
+    <!-- côte -->
+    <aside class="bottom right fixed">
+        <button class=" bottom-shadow totop raduis-100 p btn-green logo fs-bold top-bottom">↑</button>
+    </aside>
+    <aside class="flex v-center fixed right-2 bottom-center menu">
+        <section><button class="toggle btn-black" value=".menu">&lt</button></section>
+        <section class="bg-black p">
+            <h2>Thème :</h2>
+            <article>
+                <button class="default raduis-100 btn-theme active bg-grey"></button>
+                <button class="dark raduis-100 btn-theme bg-black"></button>
+                <button class="light raduis-100 btn-theme bg-white" value="light"></button>
+            </article>
+        </section>
+    </aside> 
+    <!-- Corps -->
+    <div class="flex p v-center column">
+        <div class="p-style w-100 text-white text-center overflow-x">
+            <div class="loop-h">
+                Promotion: réduction de 50% sur les tarifs ! | Contact: +111 00 44 55 33 88
             </div>
         </div>
-        <div class="p-style w-100 text-white text-center">
-            Promotion: réduction de 50% sur les tarifs !
-        </div>
-        <div class="flex around m-top">
+        <div class="flex around m-top toleft">
             <img src="ressource/image/1811.jpg" alt="presentation" class="img-2">
             <h2 class="m-w ">
                 <div class="w-100 flex">
@@ -58,7 +107,7 @@
                 nous intervenons aussi bien dans le milieu terrestre, aerien et maritime.
             </h2>
         </div>
-        <div class="flex around m-top">
+        <div class="flex around m-top toright">
             <h2 class="m-w ">
                 <div class="w-100 flex">
                     <h1 class="fs-2">
@@ -93,7 +142,7 @@
             </h2>
             <img src="ressource/image/1.jpg" alt="b&s" class="img-2">
         </div>
-        <div class="flex m-top bg-blue p">
+        <div class="flex m-top bg-blue p toup">
             <img src="ressource/image/time.jpg" alt="time" class="img-2 h">
             <h2 class="m-w ">
                 <div class="w-100 flex">
@@ -105,7 +154,7 @@
             </h2>
         </div>
         <div class="flex around m-top">
-            <div class="flex wrap center hold">
+            <div class="flex wrap center hold toleft">
                 <div class="flex column w-2 hover">
                     <img src="ressource/image/1297.jpg" alt="" class="img">
                     <div class="text-center bg-blue p">Gare</div>
@@ -123,7 +172,7 @@
                     <div class="text-center bg-blue p">Navire</div>
                 </div>
             </div>
-            <h2 class="m-w ">
+            <h2 class="m-w">
                 <div class="w-100 flex">
                     <h1 class="fs-2">
                         Galerie

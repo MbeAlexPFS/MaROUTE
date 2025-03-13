@@ -1,0 +1,84 @@
+
+.bg-1 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("../ressource/image/4.jpg");
+}
+
+.bg-2 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("../ressource/image/1297.jpg");  
+}
+
+
+.bg-3 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("../ressource/image/aircraft.jpg"); 
+}
+
+.bg-4 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url("../ressource/image/container.jpg"); 
+}
+
+.right-2 {
+    left: 97%;
+    transition: 1s;
+}
+
+.show {
+    left: 75%;
+    transition: 1s;
+}
+
+.bg-ablue {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.341);
+    width: 100vw;
+    height: 490.5px;
+    top: 95.5px;
+}
+
+.bg-home {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    animation: infinite bg-animation 20s ease-in;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-image: url("../ressource/image/4.jpg");
+    }
+    25% {
+        background-image: url("../ressource/image/1297.jpg");    
+    }
+    50% {
+        background-image: url("../ressource/image/aircraft.jpg"); 
+    }
+    75% {
+        background-image: url("../ressource/image/container.jpg"); 
+    }
+    100%{
+        background-image: url("../ressource/image/4.jpg");    
+    }
+}
+
+

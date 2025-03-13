@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaROUTE - Connexion -</title>
     <link rel="stylesheet" href="../asset/site.css">
+    <link rel="stylesheet" href="../asset/app.css">
 </head>
 <body class="font">
-    <nav class="flex bottom-shadow between fixed w-100 v-center p-0 no-toggled bg-black" id="header">
+    <nav class="flex between fixed w-100 v-center p-0 no-toggled" id="header">
         <h3 class="font flex v-center hold gap between p-w">
             <div class="flex v-center hold">Ma<span class="text-green">ROUTE</span></div>
             <div class="menu-actions">
@@ -30,15 +31,32 @@
         </div>
     </nav>
     
-    <div class="p-top flex v-center column">
+    <header>
         <div class="bg-home flex column center p w-100 h-2">
-            <div class="z-100 m-w">
+            <div class=" m-w">
                 <h1 class="title">ENTRER DANS L'<span class="text-green">UNIVERS</span> DU <span class="text-green">TRANSPORT</span></h1> 
             </div>
         </div>
+    </header>
+    <!-- côte -->
+    <aside class="bottom right fixed z-100">
+        <button class=" bottom-shadow totop raduis-100 p btn-green logo fs-bold top-bottom ">↑</button>
+    </aside>
+    <aside class="flex v-center fixed right-2 bottom-center menu z-100">
+        <section><button class="toggle btn-black " value=".menu">&lt</button></section>
+        <section class="bg-black p">
+            <h2>Thème :</h2>
+            <article>
+                <button class="default raduis-100 btn-theme active bg-grey"></button>
+                <button class="dark raduis-100 btn-theme bg-black"></button>
+                <button class="light raduis-100 btn-theme bg-white" value="light"></button>
+            </article>
+        </section>
+    </aside>
+    <div class="p-top flex v-center column">
         <h2 class="m-w ">
             <div class="w-100 flex">
-                <div>
+                <div class="toleft">
                     <h1 class="fs-2">
                         SE CONNECTER
                     </h1>
@@ -47,7 +65,7 @@
                     </div>
                 </div>
                 
-                <div class="flex center m gap hold"> 
+                <div class="flex center m gap hold toright"> 
                     <div class="flex column v-center backdrop p raduis bottom-shadow font form selected" id="form1">
                         <p>Veuillez remplir les champs ci&nbsp;dessous:</p>   
                         <form method="get" action="/">
